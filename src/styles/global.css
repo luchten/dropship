@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Pontano+Sans:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*, h1, p, a, div, li, ul, i {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.from-left {
+    transform: translateX(-100%);    
+}
+
+.show {
+    transition: 1s ease;
+    transform: translateX(0);
+}

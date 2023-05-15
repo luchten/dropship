@@ -1,0 +1,33 @@
+.main-button-wrapper {
+    width: 45%;
+    margin: 10px auto;    
+}
+
+.main-button {
+    display: inline-flex;
+    background-color: #002076;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #4A4A4A;     
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.25s;
+    margin: 10px 0;
+}
+
+.main-button:hover {
+    scale: 1.1;
+}
+
+.main-button p {
+    margin: 0 !important;
+    font-size: 18px !important;    
+    font-weight: 700;
+    color: white;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.bi-arrow-right-short {
+    color: white;
+    font-size: 30px;    
+}

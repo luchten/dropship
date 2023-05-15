@@ -1,0 +1,49 @@
+.wrapper-passo-a-passo {
+    background-color: #D1E4DD;
+    color: #4A4A4A;
+}
+
+.wrapper-passo-a-passo h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 30px;    
+}
+
+.ajuda h3 {
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.ajuda p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 20px 0;    
+}
+
+.passo-card {
+    text-align: center;
+    border: 5px solid #4A4A4A;
+    border-radius: 15px;
+    height: 333px;    
+    padding: 20px 0;    
+}
+
+.passo-card h2 {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+}
+
+.passo-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;    
+    padding: 0 30px;
+}
+
+.passo-card i {
+    font-size: 60px;
+}

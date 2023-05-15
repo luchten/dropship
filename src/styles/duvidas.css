@@ -1,0 +1,71 @@
+.wrapper-duvidas h1 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 41px;
+    font-weight: 700;
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper-duvidas a {
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: white;
+    background-color: #4A4A4A;
+    padding: 20px 30px;
+    border-radius: 10px;    
+}
+
+.list-item button {
+    font-family: "Pontano Sans", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4A4A4A;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+.list-item .bi {
+    margin-right: 10px;
+    font-size: medium;
+}
+
+.item-info p {
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    color: #4A4A4A;
+}
+
+.list-item {
+    border-bottom: 1px solid black;
+    padding: 5px;    
+    background-color: white;
+    text-align: left;
+}
+
+.item-info {
+    margin: 10px 0;
+    transition: 0.5s !important;    
+    height: 0;
+    overflow-y: hidden;
+    text-align: left;
+}
+
+.item-show {
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .wrapper-duvidas a {
+        font-size: 17px;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-item button {
+        font-size: 17px;
+    }
+}

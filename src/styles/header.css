@@ -1,0 +1,30 @@
+.header-wrapper {
+    background-color: black;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+.header-wrapper h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.header-wrapper p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.header-wrapper img {
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .header-wrapper {
+        padding-bottom: 150px;
+    }
+}

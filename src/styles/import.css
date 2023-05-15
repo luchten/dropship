@@ -1,0 +1,42 @@
+.wrapper-import {
+    background-color: white;
+}
+
+.wrapper-import h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Montserrat", Sans-serif;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.wrapper-import h3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #4A4A4A;
+}
+
+.wrapper-import h1 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #4A4A4A;
+    margin: 50px 0;
+    padding: 0 40px;
+}
+
+.wrapper-import h4 {
+    font-family: "Poppins", Sans-serif;
+    color: #4A4A4A;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.contatos p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4A4A4A;
+    margin: 15px 0;
+}
