@@ -1,8 +1,14 @@
 import { Link } from 'gatsby'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import '../styles/duvidas.css'
 
 export default function Duvidas() {
+    const item1Height = useRef();
+    const item2Height = useRef();
+    const item3Height = useRef();
+    const item4Height = useRef();
+    const item5Height = useRef();
+    const item6Height = useRef();
     const [itemState, setItemState] = useState('');
     const buttonHandle = (args) => {
         switch (args) {
@@ -43,79 +49,41 @@ export default function Duvidas() {
                             <li className='list-item'>
                                 <button onClick={() => buttonHandle('show1')}><i class="bi bi-caret-right-fill"></i>O CURSO É PRESENCIAL OU ON-LINE?</button>
                             </li>
-                            <div class={itemState === 'show1' ? 'item-info item-show' : 'item-info'}>
-                                <p>O segmento de mercado de eletrodomésticos sempre foi bastante forte online, com produtos
-                                    padronizados e relativamente fáceis de comparar, além do seu alto valor agregado e sua
-                                    longa duração. São, por exemplo, os principais produtos de uso diário, como máquinas de
-                                    lavar, lava-louças, geladeiras ou máquinas de lavar e secar.</p>
-                                <p>A venda online de pequenos eletrodomésticos como máquinas de café, máquinas de expresso,
-                                    processadores de alimentos, micro-ondas e aspiradores de pó também pertencem a este
-                                    segmento de mercado. O comércio online de eletrodomésticos, no entanto, impõe desafios
-                                    importantes como a logística, gerenciamento de garantias e devoluções.</p>
+                            <div ref={item1Height} className='item-info' style={itemState === 'show1' ? { height: item1Height.current.scrollHeight} : {}}>
+                                <p>O curso é totalmente online, sendo assim, você assiste todas as aulas do conforto da sua casa ou de onde você estiver, sem precisar sair e gastar com condução, lanches e perder tempo no trânsito!</p>
                             </div>
                             <li className='list-item'>
                                 <button onClick={() => buttonHandle('show2')}><i class="bi bi-caret-right-fill"></i>COMO FUNCIONA A GARANTIA?</button>
                             </li>
-                            <div class={itemState === 'show2' ? 'item-info item-show' : 'item-info'}>
-                                <p>O setor de bens de consumo sempre cativou o interesse do consumidor online porque é fácil de
-                                    transportar, geralmente bastante durável e também é algo que as pessoas consomem
-                                    regularmente, portanto, modelos de negócios que incluem compras repetidas funcionam muito
-                                    bem com esta categoria.</p>
-                                <p>ACCT construiu sistemas digitais para empresas gigantes como Unilever e Ab-Inbev. O
-                                    desenvolvimento de soluções para esse setor deve levar em consideração algumas
-                                    particularidades como capilaridade e rapidez na entrega, recorrência e disponibilidade de
-                                    estoque.</p>
+                            <div ref={item2Height} className='item-info' style={itemState === 'show2' ? { height: item2Height.current.scrollHeight} : {}}>
+                                <p>Damos aos nossos alunos uma Garantia de 7 dias.</p>
+                                <p>Se em qualquer momento dos próximos 7 dias você não tiver nenhum resultado, ou se você não estiver satisfeito, por qualquer motivo, apenas me avise que eu vou devolver TODO o seu dinheiro, sem nenhuma pergunta.</p>
+                                <p>Eu criei essa garantia, porque sei que os meus treinamentos vão mudar completamente a sua vida e eu não quero que você perca a oportunidade de transformar radicalmente o sua situação financeira.</p>
+                                <p>Estou te dando todas as garantias que eu posso, para você ter resultado fazendo meus treinamentos. Agora só falta você clicar no botão aqui embaixo para alcançar o faturamento dos seus sonhos!</p>
                             </div>
                             <li className='list-item'>
                                 <button onClick={() => buttonHandle('show3')}><i class="bi bi-caret-right-fill"></i>QUAIS AS FORMAS DE PAGAMENTO?</button>
                             </li>
-                            <div class={itemState === 'show3' ? 'item-info item-show' : 'item-info'}>
-                                <p>Eletrônicos é um dos segmentos mais maduros no comércio online, com receita global total de
-                                    $424,9 bilhões (2019), de acordo com o Statista. Prevemos que o mercado global de e-commerce
-                                    de eletrônicos manterá uma taxa composta de crescimento anual pelos próximos anos.</p>
-                                <p>Por isso, aqui na ACCT, implantamos e evoluímos as soluções digitais para grandes clientes do
-                                    segmento, como Samsung e Motorola.</p>
+                            <div ref={item3Height} className='item-info' style={itemState === 'show3' ? { height: item3Height.current.scrollHeight} : {}}>
+                                <p>Aceitamos todos os tipos de pagamento, cartão de débito, todos os cartões de crédito podendo parcelar sua compra em até 12x e boleto bancário à vista.</p>
                             </div>
                             <li className='list-item'>
                                 <button onClick={() => buttonHandle('show4')}><i class="bi bi-caret-right-fill"></i>COMO VOU IMPORTAR IPHONE E OUTRAS COISAS SEM SER TAXADO?</button>
                             </li>
-                            <div class={itemState === 'show4' ? 'item-info item-show' : 'item-info'}>
-                                <p>De acordo com o Statista, o segmento de Moda é um dos maiores do mercado de e-commerce B2C e
-                                    seu tamanho global foi estimado em $528,1 bilhões em 2019. O mercado deve crescer ainda mais
-                                    12,2% ao ano e atingir um tamanho de mercado total de $829,6 bilhões até o final de 2024.
-                                </p>
-                                <p>Os compradores online de moda usam a Internet para descobrir tendências e oportunidades de
-                                    compra, seja personalizando itens ou deslizando por uma interface simples em dispositivos
-                                    móveis.</p>
+                            <div ref={item4Height} className='item-info' style={itemState === 'show4' ? { height: item4Height.current.scrollHeight} : {}}>
+                                <p>Neste treinamento vamos te ensinar a escolher o frete correto para comprar Iphone ou qualquer outro produto. Existe uma modalidade de frete que os produtos não são taxados, nesta modalidade não tem pedido mínimo você pode comprar de 1 a 100 produtos, te dou 100% de certeza que vou te ensinar todo o passo a passo deste método incrível.</p>
                             </div>
                             <li className='list-item'>
                                 <button onClick={() => buttonHandle('show5')}><i class="bi bi-caret-right-fill"></i>QUAL É A PEGADINHA, POR QUE É TÃO BARATO ASSIM?</button>
                             </li>
-                            <div class={itemState === 'show5' ? 'item-info item-show' : 'item-info'}>
-                                <p>As vendas online de móveis para casa e jardim estão crescendo a uma taxa de 11,9% e devem
-                                    atingir um valor de mercado de $294 bilhões até o final de 2022 (Statista). É claro que as
-                                    marcas estão se distanciando do que antes eram armazéns e aproveitando cada vez mais as
-                                    oportunidades de possuir uma presença online omnichannel.</p>
-                                <p>Além disso, de acordo com uma pesquisa da Forrester, os utensílios domésticos devem
-                                    ultrapassar os computadores como a terceira maior categoria de produtos no mercado de varejo
-                                    até o final de 2020, fazendo com que o setor online exploda nos próximos anos.</p>
-                                <p>A Tok&Stok, uma das maiores varejistas de móveis do Brasil, está se movendo mais rapidamente
-                                    com a ACCT, frequentemente lançando novos recursos e experiências online para seus clientes.
-                                </p>
+                            <div ref={item5Height} className='item-info' style={itemState === 'show5' ? { height: item5Height.current.scrollHeight} : {}}>
+                                <p>Sabemos que nosso treinamento tem capacidade para custar até mais de R$ 2.000 reais, até por que em uma única compra você já vai recuperar seu investimento todo em economia (Comparado aos preços do Brasil) e ainda lucrar, eu mesmo na compra de um Macbook economizei R$ 10.308 reais e mostro exatamente como eu fiz. Porém queremos fazer algo diferente, ajudar o máximo de pessoas a adquirir os produtos dos seus sonhos com preço justo.</p>
                             </div>
                             <li className='list-item'>
                                 <button onClick={() => buttonHandle('show6')}><i class="bi bi-caret-right-fill"></i>QUANTO TEMPO TEREI ACESSO AO TREINAMENTO?</button>
                             </li>
-                            <div class={itemState === 'show6' ? 'item-info item-show' : 'item-info'}>
-                                <p>Acreditamos que a tecnologia está trazendo conveniência e transformando a experiência de
-                                    compra de bebidas e alimentos. Também acreditamos que nos próximos 10 anos este mercado irá
-                                    se tornar cada vez mais digital, mais rápido do que qualquer outro setor. À medida que os
-                                    compradores de alimentos em canais online aumentam, especialmente à medida que as gerações
-                                    mais jovens se tornam compradores principais, os comerciantes vêm apostando na estratégia de
-                                    criar experiências dentro do e-commerce com foco em desenvolver e manter a marca e sua
-                                    participação no mercado.</p>
-                                <p>Carrefour Brasil, SMU do Chile e Ametller Origen de Barcelona escolheram a ACCT para
-                                    desenvolver uma nova infraestrutura de e-commerce.</p>
+                            <div ref={item6Height} className='item-info' style={itemState === 'show6' ? { height: item6Height.current.scrollHeight} : {}}>
+                                <p>Fique tranquilo para estudar no seu tempo. O seu acesso será vitalício e sempre que tiver atualizações ou acréscimo de mais bônus você terá acesso total sem pagar nada a mais por isso.</p>
                             </div>
                         </ul>
                     </div>

@@ -1,3 +1,7 @@
+:root {
+    --item-info-height: 0;
+}
+
 .wrapper-duvidas h1 {
     font-family: "Montserrat", Sans-serif;
     font-size: 41px;
@@ -42,19 +46,15 @@
     border-bottom: 1px solid black;
     padding: 5px;    
     background-color: white;
-    text-align: left;
+    text-align: left;    
 }
 
 .item-info {
     margin: 10px 0;
-    transition: 0.5s !important;    
+    transition: 0.25s;    
     height: 0;
     overflow-y: hidden;
     text-align: left;
-}
-
-.item-show {
-    height: auto;
 }
 
 @media (max-width: 576px) {
